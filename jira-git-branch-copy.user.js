@@ -47,7 +47,7 @@
     button.innerHTML = '<span class="icon aui-icon aui-icon-small aui-iconfont-copy"></span> <span class="trigger-label">Copy Branch name</span><p class="assistive">Copy branch name</p>'
     toolbar.appendChild(button)
 
-    // Copy the branchname to clipboard
+    // Copy the branch name to clipboard
     button.addEventListener('click', async (event) => {
       event.stopPropagation()
       event.preventDefault()
@@ -67,13 +67,13 @@
 
       // create the branchname
       const branchName = `${ticketPrefix}/${ticketId}-${ticketName}`
-      // When the user holds the ALT button at the same time, it prepends the `git checkout -b` command
+      // When the user holds the ALT button at the same time, prepend the `git checkout -b` command
       const stringToCopy = event.altKey ? `git checkout -b ${branchName}` : branchName
 
-      // Copy the branchname to clipboard
+      // Copy the branch name to clipboard
       await navigator.clipboard.writeText(stringToCopy)
 
-      // Add a notification that the branchname has been copied
+      // Add a notification that the branch name has been copied
       const notification = document.createElement('div')
       notification.className = 'aui-message aui-message-success'
       notification.innerHTML = `<p class="title">Branch name copied</p><p>${stringToCopy}</p>`
@@ -86,7 +86,6 @@
       notification.style.padding = '10px'
       notification.style.borderRadius = '5px'
       notification.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)'
-      // add margin left to the title
       notification.querySelector('.title').style.paddingLeft = '30px'
       notification.querySelector('.title').style.paddingTop = '5px'
       body.appendChild(notification)
