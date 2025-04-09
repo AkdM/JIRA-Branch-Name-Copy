@@ -8,7 +8,7 @@ A tiny userscript that adds a handy button on your JIRA tickets to copy a proper
 - Auto-generates branch names using the ticket ID and kebab-cased title:
   - Bugs ➜ `fix/TICKET-ID-title-of-the-ticket`
   - Features ➜ `feature/TICKET-ID-title-of-the-ticket`
-- Hold `ALT` to copy the full Git command:  
+- Hold <kbd>⌥ Option</kbd>/<kbd>Alt</kbd> to copy the full Git command:  
   `git checkout -b fix/TICKET-ID-title-of-the-ticket`
 
 ## 📦 How to install
@@ -25,7 +25,7 @@ A tiny userscript that adds a handy button on your JIRA tickets to copy a proper
 
 
 > [!TIP]
-> 💡 Hold `ALT` while clicking to copy the full `git checkout -b ...` command
+> 💡 Hold <kbd>⌥ Option</kbd>/<kbd>Alt</kbd> while clicking to copy the full `git checkout -b ...` command
 
 
 ## 🧩 Browser extensions
@@ -36,7 +36,7 @@ A tiny userscript that adds a handy button on your JIRA tickets to copy a proper
 ## 📜 Changelog
 
 ### [1.1.0]
-- Ability to use ALT+click at the same time to prepend `git checkout -b`
+- Ability to use <kbd>⌥ Option</kbd>/<kbd>Alt</kbd>+click at the same time to prepend `git checkout -b`
  
 ### [1.0.0]
 - Initial release 🎉
